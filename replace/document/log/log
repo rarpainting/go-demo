@@ -1,0 +1,327 @@
+     0  *ast.File {
+     1  .  Package: -
+     2  .  Name: *ast.Ident {
+     3  .  .  NamePos: -
+     4  .  .  Name: "document"
+     5  .  }
+     6  .  Decls: []ast.Decl (len = 4) {
+     7  .  .  0: *ast.GenDecl {
+     8  .  .  .  TokPos: -
+     9  .  .  .  Tok: import
+    10  .  .  .  Lparen: -
+    11  .  .  .  Specs: []ast.Spec (len = 2) {
+    12  .  .  .  .  0: *ast.ImportSpec {
+    13  .  .  .  .  .  Path: *ast.BasicLit {
+    14  .  .  .  .  .  .  ValuePos: -
+    15  .  .  .  .  .  .  Kind: STRING
+    16  .  .  .  .  .  .  Value: "\"context\""
+    17  .  .  .  .  .  }
+    18  .  .  .  .  .  EndPos: -
+    19  .  .  .  .  }
+    20  .  .  .  .  1: *ast.ImportSpec {
+    21  .  .  .  .  .  Path: *ast.BasicLit {
+    22  .  .  .  .  .  .  ValuePos: -
+    23  .  .  .  .  .  .  Kind: STRING
+    24  .  .  .  .  .  .  Value: "\"log\""
+    25  .  .  .  .  .  }
+    26  .  .  .  .  .  EndPos: -
+    27  .  .  .  .  }
+    28  .  .  .  }
+    29  .  .  .  Rparen: -
+    30  .  .  }
+    31  .  .  1: *ast.FuncDecl {
+    32  .  .  .  Name: *ast.Ident {
+    33  .  .  .  .  NamePos: -
+    34  .  .  .  .  Name: "specFunc"
+    35  .  .  .  .  Obj: *ast.Object {
+    36  .  .  .  .  .  Kind: func
+    37  .  .  .  .  .  Name: "specFunc"
+    38  .  .  .  .  .  Decl: *(obj @ 31)
+    39  .  .  .  .  }
+    40  .  .  .  }
+    41  .  .  .  Type: *ast.FuncType {
+    42  .  .  .  .  Func: -
+    43  .  .  .  .  Params: *ast.FieldList {
+    44  .  .  .  .  .  Opening: -
+    45  .  .  .  .  .  List: []*ast.Field (len = 2) {
+    46  .  .  .  .  .  .  0: *ast.Field {
+    47  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    48  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    49  .  .  .  .  .  .  .  .  .  NamePos: -
+    50  .  .  .  .  .  .  .  .  .  Name: "specArgs"
+    51  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    52  .  .  .  .  .  .  .  .  .  .  Kind: var
+    53  .  .  .  .  .  .  .  .  .  .  Name: "specArgs"
+    54  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 46)
+    55  .  .  .  .  .  .  .  .  .  }
+    56  .  .  .  .  .  .  .  .  }
+    57  .  .  .  .  .  .  .  }
+    58  .  .  .  .  .  .  .  Type: *ast.Ident {
+    59  .  .  .  .  .  .  .  .  NamePos: -
+    60  .  .  .  .  .  .  .  .  Name: "int32"
+    61  .  .  .  .  .  .  .  }
+    62  .  .  .  .  .  .  }
+    63  .  .  .  .  .  .  1: *ast.Field {
+    64  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    65  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    66  .  .  .  .  .  .  .  .  .  NamePos: -
+    67  .  .  .  .  .  .  .  .  .  Name: "anyT"
+    68  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    69  .  .  .  .  .  .  .  .  .  .  Kind: var
+    70  .  .  .  .  .  .  .  .  .  .  Name: "anyT"
+    71  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 63)
+    72  .  .  .  .  .  .  .  .  .  }
+    73  .  .  .  .  .  .  .  .  }
+    74  .  .  .  .  .  .  .  }
+    75  .  .  .  .  .  .  .  Type: *ast.InterfaceType {
+    76  .  .  .  .  .  .  .  .  Interface: -
+    77  .  .  .  .  .  .  .  .  Methods: *ast.FieldList {
+    78  .  .  .  .  .  .  .  .  .  Opening: -
+    79  .  .  .  .  .  .  .  .  .  Closing: -
+    80  .  .  .  .  .  .  .  .  }
+    81  .  .  .  .  .  .  .  .  Incomplete: false
+    82  .  .  .  .  .  .  .  }
+    83  .  .  .  .  .  .  }
+    84  .  .  .  .  .  }
+    85  .  .  .  .  .  Closing: -
+    86  .  .  .  .  }
+    87  .  .  .  }
+    88  .  .  .  Body: *ast.BlockStmt {
+    89  .  .  .  .  Lbrace: -
+    90  .  .  .  .  List: []ast.Stmt (len = 2) {
+    91  .  .  .  .  .  0: *ast.AssignStmt {
+    92  .  .  .  .  .  .  Lhs: []ast.Expr (len = 1) {
+    93  .  .  .  .  .  .  .  0: *ast.Ident {
+    94  .  .  .  .  .  .  .  .  NamePos: -
+    95  .  .  .  .  .  .  .  .  Name: "a"
+    96  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    97  .  .  .  .  .  .  .  .  .  Kind: var
+    98  .  .  .  .  .  .  .  .  .  Name: "a"
+    99  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 91)
+   100  .  .  .  .  .  .  .  .  }
+   101  .  .  .  .  .  .  .  }
+   102  .  .  .  .  .  .  }
+   103  .  .  .  .  .  .  TokPos: -
+   104  .  .  .  .  .  .  Tok: :=
+   105  .  .  .  .  .  .  Rhs: []ast.Expr (len = 1) {
+   106  .  .  .  .  .  .  .  0: *ast.BasicLit {
+   107  .  .  .  .  .  .  .  .  ValuePos: -
+   108  .  .  .  .  .  .  .  .  Kind: INT
+   109  .  .  .  .  .  .  .  .  Value: "3"
+   110  .  .  .  .  .  .  .  }
+   111  .  .  .  .  .  .  }
+   112  .  .  .  .  .  }
+   113  .  .  .  .  .  1: *ast.ExprStmt {
+   114  .  .  .  .  .  .  X: *ast.CallExpr {
+   115  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   116  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   117  .  .  .  .  .  .  .  .  .  NamePos: -
+   118  .  .  .  .  .  .  .  .  .  Name: "log"
+   119  .  .  .  .  .  .  .  .  }
+   120  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   121  .  .  .  .  .  .  .  .  .  NamePos: -
+   122  .  .  .  .  .  .  .  .  .  Name: "Println"
+   123  .  .  .  .  .  .  .  .  }
+   124  .  .  .  .  .  .  .  }
+   125  .  .  .  .  .  .  .  Lparen: -
+   126  .  .  .  .  .  .  .  Args: []ast.Expr (len = 4) {
+   127  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+   128  .  .  .  .  .  .  .  .  .  ValuePos: -
+   129  .  .  .  .  .  .  .  .  .  Kind: STRING
+   130  .  .  .  .  .  .  .  .  .  Value: "\"specString\""
+   131  .  .  .  .  .  .  .  .  }
+   132  .  .  .  .  .  .  .  .  1: *ast.BasicLit {
+   133  .  .  .  .  .  .  .  .  .  ValuePos: -
+   134  .  .  .  .  .  .  .  .  .  Kind: INT
+   135  .  .  .  .  .  .  .  .  .  Value: "1234"
+   136  .  .  .  .  .  .  .  .  }
+   137  .  .  .  .  .  .  .  .  2: *ast.Ident {
+   138  .  .  .  .  .  .  .  .  .  NamePos: -
+   139  .  .  .  .  .  .  .  .  .  Name: "a"
+   140  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 96)
+   141  .  .  .  .  .  .  .  .  }
+   142  .  .  .  .  .  .  .  .  3: *ast.Ident {
+   143  .  .  .  .  .  .  .  .  .  NamePos: -
+   144  .  .  .  .  .  .  .  .  .  Name: "specArgs"
+   145  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 51)
+   146  .  .  .  .  .  .  .  .  }
+   147  .  .  .  .  .  .  .  }
+   148  .  .  .  .  .  .  .  Ellipsis: -
+   149  .  .  .  .  .  .  .  Rparen: -
+   150  .  .  .  .  .  .  }
+   151  .  .  .  .  .  }
+   152  .  .  .  .  }
+   153  .  .  .  .  Rbrace: -
+   154  .  .  .  }
+   155  .  .  }
+   156  .  .  2: *ast.FuncDecl {
+   157  .  .  .  Name: *ast.Ident {
+   158  .  .  .  .  NamePos: -
+   159  .  .  .  .  Name: "specFunc2"
+   160  .  .  .  .  Obj: *ast.Object {
+   161  .  .  .  .  .  Kind: func
+   162  .  .  .  .  .  Name: "specFunc2"
+   163  .  .  .  .  .  Decl: *(obj @ 156)
+   164  .  .  .  .  }
+   165  .  .  .  }
+   166  .  .  .  Type: *ast.FuncType {
+   167  .  .  .  .  Func: -
+   168  .  .  .  .  Params: *ast.FieldList {
+   169  .  .  .  .  .  Opening: -
+   170  .  .  .  .  .  List: []*ast.Field (len = 1) {
+   171  .  .  .  .  .  .  0: *ast.Field {
+   172  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   173  .  .  .  .  .  .  .  .  0: *ast.Ident {
+   174  .  .  .  .  .  .  .  .  .  NamePos: -
+   175  .  .  .  .  .  .  .  .  .  Name: "appId"
+   176  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+   177  .  .  .  .  .  .  .  .  .  .  Kind: var
+   178  .  .  .  .  .  .  .  .  .  .  Name: "appId"
+   179  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 171)
+   180  .  .  .  .  .  .  .  .  .  }
+   181  .  .  .  .  .  .  .  .  }
+   182  .  .  .  .  .  .  .  }
+   183  .  .  .  .  .  .  .  Type: *ast.Ident {
+   184  .  .  .  .  .  .  .  .  NamePos: -
+   185  .  .  .  .  .  .  .  .  Name: "int"
+   186  .  .  .  .  .  .  .  }
+   187  .  .  .  .  .  .  }
+   188  .  .  .  .  .  }
+   189  .  .  .  .  .  Closing: -
+   190  .  .  .  .  }
+   191  .  .  .  }
+   192  .  .  .  Body: *ast.BlockStmt {
+   193  .  .  .  .  Lbrace: -
+   194  .  .  .  .  List: []ast.Stmt (len = 1) {
+   195  .  .  .  .  .  0: *ast.ExprStmt {
+   196  .  .  .  .  .  .  X: *ast.CallExpr {
+   197  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   198  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   199  .  .  .  .  .  .  .  .  .  NamePos: -
+   200  .  .  .  .  .  .  .  .  .  Name: "log"
+   201  .  .  .  .  .  .  .  .  }
+   202  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   203  .  .  .  .  .  .  .  .  .  NamePos: -
+   204  .  .  .  .  .  .  .  .  .  Name: "Println"
+   205  .  .  .  .  .  .  .  .  }
+   206  .  .  .  .  .  .  .  }
+   207  .  .  .  .  .  .  .  Lparen: -
+   208  .  .  .  .  .  .  .  Args: []ast.Expr (len = 2) {
+   209  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+   210  .  .  .  .  .  .  .  .  .  ValuePos: -
+   211  .  .  .  .  .  .  .  .  .  Kind: STRING
+   212  .  .  .  .  .  .  .  .  .  Value: "\"specString\""
+   213  .  .  .  .  .  .  .  .  }
+   214  .  .  .  .  .  .  .  .  1: *ast.BasicLit {
+   215  .  .  .  .  .  .  .  .  .  ValuePos: -
+   216  .  .  .  .  .  .  .  .  .  Kind: INT
+   217  .  .  .  .  .  .  .  .  .  Value: "1234"
+   218  .  .  .  .  .  .  .  .  }
+   219  .  .  .  .  .  .  .  }
+   220  .  .  .  .  .  .  .  Ellipsis: -
+   221  .  .  .  .  .  .  .  Rparen: -
+   222  .  .  .  .  .  .  }
+   223  .  .  .  .  .  }
+   224  .  .  .  .  }
+   225  .  .  .  .  Rbrace: -
+   226  .  .  .  }
+   227  .  .  }
+   228  .  .  3: *ast.FuncDecl {
+   229  .  .  .  Name: *ast.Ident {
+   230  .  .  .  .  NamePos: -
+   231  .  .  .  .  Name: "specFunc3"
+   232  .  .  .  .  Obj: *ast.Object {
+   233  .  .  .  .  .  Kind: func
+   234  .  .  .  .  .  Name: "specFunc3"
+   235  .  .  .  .  .  Decl: *(obj @ 228)
+   236  .  .  .  .  }
+   237  .  .  .  }
+   238  .  .  .  Type: *ast.FuncType {
+   239  .  .  .  .  Func: -
+   240  .  .  .  .  Params: *ast.FieldList {
+   241  .  .  .  .  .  Opening: -
+   242  .  .  .  .  .  List: []*ast.Field (len = 1) {
+   243  .  .  .  .  .  .  0: *ast.Field {
+   244  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   245  .  .  .  .  .  .  .  .  0: *ast.Ident {
+   246  .  .  .  .  .  .  .  .  .  NamePos: -
+   247  .  .  .  .  .  .  .  .  .  Name: "ctx"
+   248  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+   249  .  .  .  .  .  .  .  .  .  .  Kind: var
+   250  .  .  .  .  .  .  .  .  .  .  Name: "ctx"
+   251  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 243)
+   252  .  .  .  .  .  .  .  .  .  }
+   253  .  .  .  .  .  .  .  .  }
+   254  .  .  .  .  .  .  .  }
+   255  .  .  .  .  .  .  .  Type: *ast.SelectorExpr {
+   256  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   257  .  .  .  .  .  .  .  .  .  NamePos: -
+   258  .  .  .  .  .  .  .  .  .  Name: "context"
+   259  .  .  .  .  .  .  .  .  }
+   260  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   261  .  .  .  .  .  .  .  .  .  NamePos: -
+   262  .  .  .  .  .  .  .  .  .  Name: "Context"
+   263  .  .  .  .  .  .  .  .  }
+   264  .  .  .  .  .  .  .  }
+   265  .  .  .  .  .  .  }
+   266  .  .  .  .  .  }
+   267  .  .  .  .  .  Closing: -
+   268  .  .  .  .  }
+   269  .  .  .  }
+   270  .  .  .  Body: *ast.BlockStmt {
+   271  .  .  .  .  Lbrace: -
+   272  .  .  .  .  List: []ast.Stmt (len = 1) {
+   273  .  .  .  .  .  0: *ast.ExprStmt {
+   274  .  .  .  .  .  .  X: *ast.CallExpr {
+   275  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   276  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   277  .  .  .  .  .  .  .  .  .  NamePos: -
+   278  .  .  .  .  .  .  .  .  .  Name: "log"
+   279  .  .  .  .  .  .  .  .  }
+   280  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   281  .  .  .  .  .  .  .  .  .  NamePos: -
+   282  .  .  .  .  .  .  .  .  .  Name: "Println"
+   283  .  .  .  .  .  .  .  .  }
+   284  .  .  .  .  .  .  .  }
+   285  .  .  .  .  .  .  .  Lparen: -
+   286  .  .  .  .  .  .  .  Args: []ast.Expr (len = 2) {
+   287  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+   288  .  .  .  .  .  .  .  .  .  ValuePos: -
+   289  .  .  .  .  .  .  .  .  .  Kind: STRING
+   290  .  .  .  .  .  .  .  .  .  Value: "\"specString\""
+   291  .  .  .  .  .  .  .  .  }
+   292  .  .  .  .  .  .  .  .  1: *ast.BasicLit {
+   293  .  .  .  .  .  .  .  .  .  ValuePos: -
+   294  .  .  .  .  .  .  .  .  .  Kind: INT
+   295  .  .  .  .  .  .  .  .  .  Value: "1234"
+   296  .  .  .  .  .  .  .  .  }
+   297  .  .  .  .  .  .  .  }
+   298  .  .  .  .  .  .  .  Ellipsis: -
+   299  .  .  .  .  .  .  .  Rparen: -
+   300  .  .  .  .  .  .  }
+   301  .  .  .  .  .  }
+   302  .  .  .  .  }
+   303  .  .  .  .  Rbrace: -
+   304  .  .  .  }
+   305  .  .  }
+   306  .  }
+   307  .  Scope: *ast.Scope {
+   308  .  .  Objects: map[string]*ast.Object (len = 3) {
+   309  .  .  .  "specFunc": *(obj @ 35)
+   310  .  .  .  "specFunc2": *(obj @ 160)
+   311  .  .  .  "specFunc3": *(obj @ 232)
+   312  .  .  }
+   313  .  }
+   314  .  Imports: []*ast.ImportSpec (len = 2) {
+   315  .  .  0: *(obj @ 12)
+   316  .  .  1: *(obj @ 20)
+   317  .  }
+   318  .  Unresolved: []*ast.Ident (len = 6) {
+   319  .  .  0: *(obj @ 58)
+   320  .  .  1: *(obj @ 116)
+   321  .  .  2: *(obj @ 183)
+   322  .  .  3: *(obj @ 198)
+   323  .  .  4: *(obj @ 256)
+   324  .  .  5: *(obj @ 276)
+   325  .  }
+   326  }
